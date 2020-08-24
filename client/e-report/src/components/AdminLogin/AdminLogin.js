@@ -29,7 +29,7 @@ function AdminLogin({ setAdminAuth }) {
     try {
       const body = { email, password };
       const response = await fetch(
-        "http://localhost:3000/auth/adminlogin",
+        "/auth/adminlogin",
         {
           method: "POST",
           headers: {

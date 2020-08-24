@@ -75,7 +75,7 @@ function UserDashboard({ setAuth }) {
         // console.log(user, "The user")
         // setLoading(true);
 
-        fetch(`http://localhost:3000/dashboard/home/${user}`)
+        fetch(`/dashboard/home/${user}`)
             .then(res => res.json())
             .then(result => {
                 setReports(result)
@@ -89,7 +89,7 @@ function UserDashboard({ setAuth }) {
 
 
 
-        fetch(`http://localhost:3000/userinfo/username/${user}`)
+        fetch(`/userinfo/username/${user}`)
             .then(response => response.json())
             .then(username => {
                 setName(username)
@@ -163,7 +163,7 @@ function UserDashboard({ setAuth }) {
         const reportNumber = info.id
         // console.log(index)
         // console.log(reportNumber)
-        fetch(`http://localhost:3000/dashboard/home/${reportNumber}`, {
+        fetch(`/dashboard/home/${reportNumber}`, {
             headers: { "Content-Type": "application/json; charset=utf-8" },
             method: 'DELETE',
             mode: 'cors',
@@ -175,7 +175,7 @@ function UserDashboard({ setAuth }) {
     const forwardedReports =()=>{
         const { user } = decode(localStorage.token);
       
-        fetch(`http://localhost:3000/dashboard/home/forwarded/${user}`)
+        fetch(`/dashboard/home/forwarded/${user}`)
         .then(res => res.json())
         .then(result => {
             setReports(result)
@@ -194,7 +194,7 @@ function UserDashboard({ setAuth }) {
     const pendingReports =()=>{
         const { user } = decode(localStorage.token);
         
-        fetch(`http://localhost:3000/dashboard/home/pending/${user}`)
+        fetch(`/dashboard/home/pending/${user}`)
         .then(res => res.json())
         .then(result => {
             setReports(result)
@@ -213,7 +213,7 @@ function UserDashboard({ setAuth }) {
     const allReports =()=>{
         const { user } = decode(localStorage.token);
       
-        fetch(`http://localhost:3000/dashboard/home/${user}`)
+        fetch(`/dashboard/home/${user}`)
         .then(res => res.json())
         .then(result => {
             setReports(result)

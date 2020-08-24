@@ -152,13 +152,13 @@ function AdminDashboard({ setAdminAuth, index, info }) {
 
   const getProfile = async () => {
     try {
-      const res = await fetch("http://localhost:3000/dashboard/", {
+      const res = await fetch("/dashboard/", {
         method: "POST",
         headers: { jwt_token: localStorage.token }
       })
 
       const parseData = await res.json();
-      // console.log(parseData)
+      console.log(parseData)
     } catch (err) {
       console.error(err.message);
     }
@@ -183,7 +183,7 @@ function AdminDashboard({ setAdminAuth, index, info }) {
     // console.log(localStorage.token,"Local Storage Token");
     // console.log(admin, "The Admin user")
 
-    fetch(`http://localhost:3000/dashboard/admin/home`)
+    fetch(`/dashboard/admin/home`)
       .then(res => res.json())
       .then(result => {
         setReports(result)
@@ -225,7 +225,7 @@ function AdminDashboard({ setAdminAuth, index, info }) {
     const reportNumber = `${info.id}`
     // console.log(x)
     // console.log(reportNumber)
-    fetch(`http://localhost:3000/dashboard/home/${reportNumber}`, {
+    fetch(`/dashboard/home/${reportNumber}`, {
       headers: { "Content-Type": "application/json; charset=utf-8" },
       method: 'DELETE',
       mode: 'cors',
@@ -239,7 +239,7 @@ function AdminDashboard({ setAdminAuth, index, info }) {
     const reportNumber = `${info.id}`
     // console.log(x)
     // console.log(reportNumber)
-    fetch(`http://localhost:3000/dashboard/forwarded/${reportNumber}`, {
+    fetch(`/dashboard/forwarded/${reportNumber}`, {
       headers: { "Content-Type": "application/json; charset=utf-8" },
       method: 'PATCH',
       mode: 'cors',
@@ -250,7 +250,7 @@ function AdminDashboard({ setAdminAuth, index, info }) {
 
   const allForwardedReports = () => {
 
-    fetch(`http://localhost:3000/dashboard/admin/home/forwarded`)
+    fetch(`/dashboard/admin/home/forwarded`)
       .then(res => res.json())
       .then(result => {
         setForwardedReports(result.length)
@@ -267,7 +267,7 @@ function AdminDashboard({ setAdminAuth, index, info }) {
 
   const allpendingReports = () => {
 
-    fetch(`http://localhost:3000/dashboard/admin/home/pending`)
+    fetch(`/dashboard/admin/home/pending`)
       .then(res => res.json())
       .then(result => {
         setPendingReports(result.length)
@@ -286,7 +286,7 @@ function AdminDashboard({ setAdminAuth, index, info }) {
   const allReportsButton =()=>{
     // console.log("all reports")
 
-    fetch(`http://localhost:3000/dashboard/admin/home`)
+    fetch(`/dashboard/admin/home`)
       .then(res => res.json())
       .then(result => {
         setReports(result)
@@ -302,7 +302,7 @@ function AdminDashboard({ setAdminAuth, index, info }) {
   const forwardedReportsButton =()=>{
     console.log("forwarded reports")
 
-    fetch(`http://localhost:3000/dashboard/admin/home/forwarded`)
+    fetch(`/dashboard/admin/home/forwarded`)
     .then(res => res.json())
     .then(result => {
       setReports(result)
@@ -318,7 +318,7 @@ function AdminDashboard({ setAdminAuth, index, info }) {
   const pendingReportsButton =()=>{
     // console.log("pending reports")
     
-    fetch(`http://localhost:3000/dashboard/admin/home/pending`)
+    fetch(`/dashboard/admin/home/pending`)
     .then(res => res.json())
     .then(result => {
       setReports(result)
@@ -335,7 +335,7 @@ function AdminDashboard({ setAdminAuth, index, info }) {
   const privateReportsButton =()=>{
     // console.log("private reports")
 
-    fetch(`http://localhost:3000/dashboard/admin/home/private`)
+    fetch(`/dashboard/admin/home/private`)
     .then(res => res.json())
     .then(result => {
       setReports(result)

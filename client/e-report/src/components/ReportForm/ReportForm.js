@@ -83,7 +83,7 @@ function ReportForm({ addReport }) {
 
                     })
                 };
-                fetch('http://localhost:3000/dashboard/home', reportPosting)
+                fetch('/dashboard/home', reportPosting)
                     .then(response => response.json())
                     .then(data => setReport(data));
 

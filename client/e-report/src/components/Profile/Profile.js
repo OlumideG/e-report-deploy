@@ -34,13 +34,13 @@ const Profile = ({ setAuth }) => {
 
         const { user } = decode(localStorage.token);
         console.log(localStorage.token, "Local Storage Token");
-        console.log(user, "The user")
+        // console.log(user, "The user")
 
-        fetch(`http://localhost:3000/dashboard/home/${user}`)
+        fetch(`/dashboard/home/${user}`)
             .then(res => res.json())
             .then(result => {
                 setReports(result)
-                console.log(result)
+                // console.log(result)
             })
             .catch(err => {
                 console.log(err.message);
@@ -49,12 +49,12 @@ const Profile = ({ setAuth }) => {
 
 
 
-        fetch(`http://localhost:3000/userinfo/username/${user}`)
+        fetch(`/userinfo/username/${user}`)
             .then(response => response.json())
             .then(username => {
                 setName(username)
 
-                console.log(username)
+                // console.log(username)
             })
             .catch(err => {
                 console.log(err.message);

@@ -32,7 +32,7 @@ function UserSignup({ setAuth }) {
       const body = { email, password, firstname, lastname };
       // console.log(body, "body of signup");
       const response = await fetch(
-        "http://localhost:3000/auth/usersignup",
+        "/auth/usersignup",
         {
           method: "POST",
           headers: {

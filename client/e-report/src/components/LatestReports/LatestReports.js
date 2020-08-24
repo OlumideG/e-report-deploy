@@ -110,7 +110,7 @@ const LatestReports = () => {
        
          setLoading(false);
 
-        await fetch(`http://localhost:3000/dashboard/home/latest/${search}`)
+        await fetch(`/dashboard/home/latest/${search}`)
             .then(response => response.json())
             .then(result => {
                 setLatestReport(result)
