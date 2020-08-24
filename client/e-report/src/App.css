@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+
+
+/* admin chart */
+.chartContainer{
+  display:flex;
+  justify-content: center;
+}
+
+.chart{
+  width:720px
+}
+
+
+
+.latestContainer{
+  margin-left: 400px;
+}
+
+/* sidebar */
+.sidebar{
+  width:160px;
+  background-color: grey;
+}
+
+.sidebar-list{
+  width: 200px;
+  border:300px;
+}
+
+
+
+
+
+
+/* landing page  */
+
+body {
+  margin: 0;
+  padding: 0;
+  /* background-color: #f5f5f5; */
+  height: 100vh;
+}
+
+
+
+
+/*User Login*/
+
+.formContainer,
+.formContainerSignup {
+  text-align: center;
+  width: 100%;
+}
+
+.formContainer {
+  margin: 80px 0 0 0;
+
+}
+
+/* 
+.formContainerSignup {
+  margin: 40px 0 0 0;
+} */
+
+.formCard {
+  margin: 0 38% 0 38%;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  padding: 50px;
+}
+
+.titleContainer {
+  margin: 20px 0 20px 0;
+}
+
+.titleContainer h1 {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+  color: #11151C;
+}
+
+.emailContainer,
+.passwordContainer {
+  padding: 0 0 30px 0;
+}
+
+.emailContainer input,
+.passwordContainer input {
+  width: 90%;
+  background: rgba(196, 196, 196, 0.03);
+  border: 1.5px solid #C4C4C4;
+  border-radius: 4px;
+}
+
+
+.emailContainer input[type=email] {
+  padding: 10px 10px 10px 10px;
+}
+
+.passwordContainer input[type=password] {
+  padding: 10px 10px 10px 10px;
+}
+
+.submitContainer {
+  margin: 10px 0 30% 0;
+}
+
+.btn-1 {
+  display: inline-block;
+  width: 90%;
+  background-color: #D92027;
+  border-radius: 8px;
+  border: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #DFEFFF;
+  padding: 5px 10px 5px 10px;
+  outline: none;
+}
+
+
+.breaklineContainer {
+  display: flex;
+  justify-content: center;
+
+}
+
+.breakline {
+  margin: 40px 0 5px 0;
+  width: 80%;
+  border: 0.5px solid rgba(26, 26, 26, 0.8);
+}
+
+.formFooter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cantLogin {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #777777;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  background: #1A1A1A;
+  margin: 10px 0 0 0;
+  border-radius: 50%;
+
+}
+
+.canSignup {
+  font-style: none;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+  color: #27496D;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: center;
+  margin: 80px 0 0 0;
+}
+
+.footerContainer h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1A1A1A;
+  padding: 0 15px 0 15px;
+}
+
+/************************/
+
+/*UserSignup*/
+.formContainerSignup {
+  margin: 60px 0 0 0;
+}
+
+.formCardSignup {
+  margin: 0 34% 0 34%;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  padding: 50px;
+}
+
+.titleContainerSignup {
+  margin: 20px 0 20px 0;
+}
+
+.titleContainerSignup h1 {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+  color: #11151C;
+}
+
+.emailContainerSignup,
+.firstNameContainer,
+.lastNameContainer,
+.passwordContainerSignup {
+  padding: 0 0 30px 0;
+}
+
+.firstNameContainer input,
+.lastNameContainer input,
+.emailContainerSignup input,
+.passwordContainerSignup input {
+  width: 90%;
+  background: rgba(196, 196, 196, 0.03);
+  border: 1.5px solid #C4C4C4;
+  border-radius: 4px;
+}
+
+
+.firstNameContainer input[type=text] {
+  padding: 10px 10px;
+}
+
+.lastNameContainer input[type=text] {
+  padding: 10px 10px;
+}
+
+.emailContainerSignup input[type=email] {
+  padding: 10px 10px;
+}
+
+.passwordContainerSignup input[type=password] {
+  padding: 10px 10px;
+}
+
+
+::placeholder {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  color: #C4C4C4;
+}
+
+.dashContainer {
+  display: flex;
+  justify-content: space-evenly;
+  margin: -10px 0 0 0;
+}
+
+.firstDash,
+.secondDash,
+.thirdDash,
+.fourthDash,
+.fifthDash {
+  width: 40px;
+  border: 1px solid #B3B3B3;
+  margin: 0 10px 0 0;
+}
+
+.passwordInfoContainer {
+  margin: 20px 0;
+}
+
+.passwordInfoContainer .info {
+  height: 16px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: #11151C;
+}
+
+.termsContainer p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: #11151C;
+}
+
+.submitContainerSign {
+  margin: 15px 0 20% 0;
+}
+
+.already {
+  font-style: normal;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.alreadyLogin {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+
+
+.footerContainerSignup {
+  display: flex;
+  justify-content: center;
+}
+
+
+.footerContainerSignup h4 {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #11151C;
+  padding: 0 10px;
+  margin: 20px 0 20px 0;
+}
+
+/*................................*/
+
+
+
+/*Media Qeury*/
+@media only screen and (max-width:1400px) and (min-width:914px) {
+
+  /*Signup*/
+
+  .formCardSignup {
+    margin: 0 32% 0 32%;
+  }
+
+  .titleContainerSignup h1 {
+    font-size: 20px;
+  }
+
+  .footerContainerSignup h4 {
+    font-size: 15px;
+    padding: 0 5px;
+    margin: 20px 0 20px 0;
+  }
+
+  /*Login*/
+  .formCard {
+    margin: 0 32% 0 32%;
+  }
+
+  .footerContainer h4 {
+    font-size: 15px;
+    padding: 0 5px;
+    margin: 20px 0 20px 0;
+  }
+
+}
+
+@media only screen and (max-width: 913px) and (min-width: 848px) {
+
+  /*Sign up*/
+  .formCardSignup {
+    margin: 0 28% 0 28%;
+  }
+
+  .footerContainerSignup h4 {
+    font-size: 15px;
+    padding: 0 5px;
+    margin: 20px 0 20px 0;
+  }
+
+  /*Login */
+  .formCard {
+    margin: 0 25% 0 25%;
+  }
+
+  .footerContainerSignup h4 {
+    font-size: 15px;
+    padding: 0 5px;
+    margin: 20px 0 20px 0;
+  }
+
+
+
+}
+
+@media only screen and (max-width: 848px) and (min-width: 750px) {
+
+  /*Sign Up*/
+
+
+  .formCardSignup {
+    margin: 0 28% 0 28%;
+  }
+
+  .footerContainerSignup h4 {
+    font-size: 14px;
+    padding: 0 5px;
+    margin: 20px 0 20px 0;
+  }
+
+  /*Login*/
+  .formCard {
+    margin: 0 28% 0 28%;
+  }
+
+  .footerContainer h4 {
+    font-size: 15px;
+    padding: 0 5px;
+    margin: 20px 0 20px 0;
+  }
+
+
+}
+
+@media only screen and (max-width: 749px) and (min-width:687px) {
+
+  /*Sign Up*/
+
+  .formCardSignup {
+    margin: 0 26% 0 26%;
+  }
+
+  .footerContainerSignup h4 {
+    font-size: 14px;
+    padding: 0 5px;
+    margin: 20px 0 10px 0;
+  }
+
+  /*Login*/
+
+  .formCard {
+    margin: 0 24% 0 24%;
+  }
+
+  .footerContainer h4 {
+    font-size: 16px;
+    padding: 0 5px;
+    margin: 20px 0 10px 0;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 686px) and (min-width:552px) {
+
+  /*Sign Up*/
+  .formCardSignup {
+    margin: 0 22% 0 22%;
+  }
+
+  .footerContainerSignup h4 {
+    font-size: 14px;
+    padding: 0 5px;
+    margin: 20px 0 10px 0;
+  }
+
+  /*Login*/
+  .formCard {
+    margin: 0 20% 0 20%;
+  }
+
+  .footerContainer h4 {
+    font-size: 16px;
+    padding: 0 5px;
+    margin: 20px 0 10px 0;
+  }
+}
+
+@media only screen and (max-width: 551px) and (min-width:400px) {
+
+  /*Sign up*/
+  .formCardSignup {
+    margin: 0 15% 0 15%;
+  }
+
+  .footerContainerSignup h4 {
+    font-size: 14px;
+    padding: 0 5px;
+    margin: 20px 0 10px 0;
+  }
+
+  /* Login */
+  .formCard {
+    margin: 0 15% 0 15%;
+  }
+
+  .footerContainer h4 {
+    font-size: 12px;
+    padding: 0 5px;
+    margin: 20px 0 10px 0;
+  }
+}
+
+@media only screen and (max-width: 399px) and (min-width: 0) {
+
+  /*Sign Up*/
+  .formCardSignup {
+    margin: 0 18px 0 18px;
+  }
+
+  .footerContainerSignup h4 {
+    font-size: 11px;
+    padding: 0 5px;
+  }
+
+  /*Login*/
+  .titleContainer h1 {
+    font-size: 15px;
+  }
+
+  .formCard {
+    margin: 0 30px 0 30px;
+  }
+
+  .footerContainer h4 {
+    font-size: 10px;
+    padding: 0 3px;
+    margin: 20px 0 10px 0;
+  }
+
+  .emailContainer input,
+  .passwordContainer input {
+    width: 100%;
+  }
+
+  .btn-1 {
+    width: 100%;
+  }
+}
+
+
+
+
+/* .result-down{
+  margin-top: 100px;
+} */
+
+
+.stars-active {
+  display: flex;
+  color: gold;
+
+}
+
+.button-book {
+  color: white;
+  background-color: red;
+  border-radius: 3px;
+}
+
+.conf {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  letter-spacing: -0.24px;
+  /* text-decoration-line: underline; */
+  color: #373F41;
+
+}
