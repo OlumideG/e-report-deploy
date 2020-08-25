@@ -31,15 +31,19 @@ app.use( (req,res, next) =>{
 
 
 
-app.get("/", async (req, res, next) => {
-  try {
-      res.send("working")
-      // console.log(user.rows)
-  } catch (error) {
-      next(error)
-  }
+// app.get("/", async (req, res, next) => {
+//   try {
+//       res.send("working")
+//       // console.log(user.rows)
+//   } catch (error) {
+//       next(error)
+//   }
 
-})
+// })
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "client/build/index.html"));
+});
 
 if (app.get("env") === "development"){
     app.use((err,req,res,next) =>{
