@@ -56,7 +56,7 @@ const Settings = () => {
               <div className="home-container">
                 <Link to="/userdashboard"> <button className="home-text">
                   <FaHome className="home-icon" />
-                  <span className="home-te">Home</span></button>
+                  <span className="home-te">Home </span></button>
                 </Link>
               </div>
 
