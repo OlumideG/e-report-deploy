@@ -16,7 +16,7 @@ import '../UserDashboard/UserDashboard.css';
 const User = ({ info, index }) =>
     <div>
         <div className="welcome-user">
-            <h1 className="welcome-user-text capital-letter">Name: {info.first_name} {info.last_name}</h1>
+            <h1 className="welcome-user-text capital-letter">Name:  {info.first_name} {info.last_name}</h1>
             <h1 className="welcome-user-text">Email: {info.user_email}</h1>
         </div>
     </div>
