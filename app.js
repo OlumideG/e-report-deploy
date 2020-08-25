@@ -29,6 +29,18 @@ app.use( (req,res, next) =>{
    next(err);
 })
 
+
+
+app.get("/", async (req, res, next) => {
+  try {
+      res.send("working")
+      // console.log(user.rows)
+  } catch (error) {
+      next(error)
+  }
+
+})
+
 if (app.get("env") === "development"){
     app.use((err,req,res,next) =>{
         res.status(err.status || 500);
